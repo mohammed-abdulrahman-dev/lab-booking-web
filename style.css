@@ -19,12 +19,20 @@
       p{
         color: blue;
         margin-bottom: 20px;
+
         label{
             margin-right: 10px;
     
-    }
         
-}
+    
+   
+    }
+}   
+
+input:focus, select:focus{
+        outline: none;
+        border:2px solid rgb(53, 12, 87);
+    }
     button{
          display:block;
         width: 100px;
@@ -34,5 +42,12 @@
     }
     button:hover{
         cursor: pointer;
-        background-color: #ddd;
+        background-color:#ddd;
+    }
+    @media (max-width: 600px){
+        form{
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px;
+        }
     }
